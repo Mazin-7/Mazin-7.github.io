@@ -88,7 +88,7 @@
     font-size: 30px;
 }
 
-#mail-container {
+#email-container {
     display: flex;
     justify-content: center;
 }
@@ -127,7 +127,24 @@
 .description {
     max-width: 75%;
     margin-bottom: 10px;
+    line-height: 1.6;
 }
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .description {
+        max-width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .description {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
 
 #btn-projects {
     font-weight: bold;
